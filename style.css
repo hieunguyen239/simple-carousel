@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.slides-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  /* background: #333;
+  color: #fff;
+  font-size: 20px;
+  line-height: 11; */
+  margin: 3px;
+  text-align: center;
+  width:342px;
+  float: left;
+  transition: none;
+}
+
+.slide img {
+  filter: grayscale(100%);
+}
+
+.slide.active {
+  /* background: brown; */
+  /* transform: scale(1.5); */
+
+}
+.slide.active img {
+  filter: grayscale(0);
+}
+
+.navigation {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+  overflow: hidden;
+}
